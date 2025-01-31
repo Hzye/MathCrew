@@ -24,9 +24,14 @@ class CustomAgents:
 
     def math_coordinator_agent(self):
         return Agent(
-            role="Define agent 1 role here",
-            backstory=dedent(f"""Define agent 1 backstory here"""),
-            goal=dedent(f"""Define agent 1 goal here"""),
+            role="High School Math Subject Co-ordinator",
+            backstory=dedent(f"""
+                Expert in aligning math content with curriculum. 
+                I have decades of experience running the math department at a top high school. 
+            """),
+            goal=dedent(f"""
+                Create relevant math homework worksheet or practice exam based on provided topics and requirements.
+            """),
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
@@ -35,9 +40,15 @@ class CustomAgents:
 
     def math_teacher_agent(self):
         return Agent(
-            role="Define agent 2 role here",
-            backstory=dedent(f"""Define agent 2 backstory here"""),
-            goal=dedent(f"""Define agent 2 goal here"""),
+            role="High School Math Teacher",
+            backstory=dedent(f"""
+                Expert in teaching math and writing math questions.
+                I have decades of experience as a math teacher at a top high school.
+            """),
+            goal=dedent(f"""
+                Collect the most relevant math questions based on provided topics and requirements.
+                Can also adjust problems.
+            """),
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
@@ -46,9 +57,14 @@ class CustomAgents:
 
     def math_olympiad_agent(self):
         return Agent(
-            role="Define agent 2 role here",
-            backstory=dedent(f"""Define agent 2 backstory here"""),
-            goal=dedent(f"""Define agent 2 goal here"""),
+            role="Math Olympiad Winner",
+            backstory=dedent(f"""
+                Expert in solving and stepping through math problems.
+                I am a multi-year Math Olympiad winner.
+            """),
+            goal=dedent(f"""
+                Solve and explain the solutions to all math problems.
+            """),
             # tools=[tool_1, tool_2],
             allow_delegation=False,
             verbose=True,
